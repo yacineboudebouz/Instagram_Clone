@@ -1,9 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="116dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:paddingLeft="5dp"
+            android:src="@drawable/fontinsta" />
+
+        <EditText
+            android:id="@+id/emaillogin_ID"
+            android:layout_width="341dp"
+            android:layout_height="49dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/edit_text"
+            android:hint="Email"
+            android:paddingLeft="10dp" />
+        <EditText
+            android:id="@+id/passwordlogin_ID"
+            android:layout_width="341dp"
+            android:layout_height="49dp"
+            android:layout_gravity="center"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text"
+            android:hint="Password"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:layout_width="336dp"
+            android:id="@+id/short_ID"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="too short password"
+            android:visibility="invisible"
+            android:textColor="@color/red"/>
+
+        <Button
+            android:id="@+id/Login_ID"
+            android:layout_width="337dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_background"
+            android:text="Login" />
+        <TextView
+            android:id="@+id/register_text_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="new ? Sign up here " />
+    </LinearLayout>
+
+</RelativeLayout>

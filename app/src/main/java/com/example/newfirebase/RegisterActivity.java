@@ -10,7 +10,6 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -95,7 +94,7 @@ public class RegisterActivity extends AppCompatActivity {
                             pd.dismiss(); // to stop the progress dialog //
                             Toast.makeText(RegisterActivity.this, "Created successfully, update the profile for est experience !",
                                     Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(RegisterActivity.this,CreateValid.class);
+                            Intent intent = new Intent(RegisterActivity.this, MainScreen.class);
                             // to stop the current activity task and kill the activity, user can't return to this activity
                            intent.addFlags( Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
                             startActivity(intent);
