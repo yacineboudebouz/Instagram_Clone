@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.NewFirebase" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#455cde</item>
+        <item name="colorPrimaryVariant">#000d3d</item>
+        <item name="colorOnPrimary">#c2bdbf</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#455cde</item>
+        <item name="colorSecondaryVariant">#000d3d</item>
+        <item name="colorOnSecondary">#c2bdbf</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>
