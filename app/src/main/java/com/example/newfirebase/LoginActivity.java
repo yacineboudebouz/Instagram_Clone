@@ -60,13 +60,13 @@ public class LoginActivity extends AppCompatActivity {
         auth.signInWithEmailAndPassword(txtEmail,txtPass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
-                if(task.isSuccessful()){
+                if (task.isSuccessful()) {
 
                     Toast.makeText(LoginActivity.this, "Login successfully, update the profile for Best experience !",
                             Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(LoginActivity.this, MainScreen.class);
                     // to stop the current activity task and kill the activity, user can't return to this activity
-                    intent.addFlags( Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
                 }
             }
