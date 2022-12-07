@@ -8,14 +8,17 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
         android:id="@+id/fragmentsContainer"/>
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/bottom"
         android:layout_alignParentBottom="true">
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/bottomNav"
             app:menu="@menu/bottomnavigationbarmenu"
             app:itemIconTint="@color/iconcolor"
             app:labelVisibilityMode="unlabeled"
