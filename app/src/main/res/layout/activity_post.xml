@@ -35,5 +35,23 @@
             </RelativeLayout>
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/image_add_ID"/>
+        <com.hendraanggrian.appcompat.widget.SocialAutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Description..."
+            android:maxLines="5"
+            android:id="@+id/description"/>
+    </LinearLayout>
 
 </LinearLayout>
