@@ -56,13 +56,14 @@ public class PostActivity extends AppCompatActivity {
         });
         CropImage.activity().start(PostActivity.this);
     }
-
+    // here to upload our image to the dataBase
     private void upload() {
         ProgressDialog pd = new ProgressDialog(this);
         pd.setMessage("Please Wait !");
         pd.show();
 
         if(imageUri != null){
+            // the file path is the place in database where we will store our image and will stored seperatly, png.. jpg..
             StorageReference filePath = FirebaseStorage.
                     getInstance().getReference("Posts").
                     child(System.currentTimeMillis() + "." + getFileExtention(imageUri));
